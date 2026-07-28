@@ -1,0 +1,277 @@
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f3edfb;
+  color: #3a2e50;
+  line-height: 1.6;
+}
+
+h1, h2, h3 { font-weight: 700; }
+
+a { color: #7c5cbf; }
+
+ul { list-style: none; }
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contenedor-angosto {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #7c5cbf;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #6b5b8a;
+  margin-bottom: 40px;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #ffffff;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(124, 92, 191, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #7c5cbf;
+}
+
+.logo span { color: #3a2e50; }
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3a2e50;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+nav a:hover { color: #7c5cbf; }
+
+/* ===== HERO ===== */
+#hero {
+  background: linear-gradient(135deg, #d9c7f2, #f3edfb);
+  text-align: center;
+  padding: 90px 20px;
+  max-width: none;
+}
+
+#hero h2 {
+  font-size: 36px;
+  color: #3a2e50;
+  margin-bottom: 16px;
+}
+
+#hero p {
+  max-width: 600px;
+  margin: 0 auto 28px auto;
+  color: #5a4a75;
+  font-size: 17px;
+}
+
+.boton {
+  display: inline-block;
+  background: #7c5cbf;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.boton:hover { background: #6845ab; }
+
+/* ===== PROBLEMA ===== */
+#problema {
+  text-align: center;
+}
+
+#problema p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #5a4a75;
+}
+
+/* ===== CARACTERISTICAS ===== */
+.grid-caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+article {
+  background: #ffffff;
+  border: 1px solid #d9c7f2;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+}
+
+article h3 {
+  color: #7c5cbf;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+article p { color: #5a4a75; font-size: 15px; }
+
+.icono {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* ===== COMO FUNCIONA ===== */
+#como-funciona { background: #ffffff; max-width: none; }
+
+.pasos {
+  max-width: 700px;
+  margin: 0 auto;
+  counter-reset: paso;
+}
+
+.pasos li {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.pasos li::before {
+  counter-increment: paso;
+  content: counter(paso);
+  background: #7c5cbf;
+  color: #ffffff;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ===== TESTIMONIOS ===== */
+.grid-testimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.grid-testimonios article {
+  text-align: left;
+  background: #f3edfb;
+  border: none;
+}
+
+.grid-testimonios h3 {
+  font-size: 15px;
+  color: #3a2e50;
+}
+
+.grid-testimonios p {
+  font-style: italic;
+  color: #5a4a75;
+}
+
+/* ===== FORMULARIO DE CONTACTO ===== */
+#formulario-contacto {
+  background: #ffffff;
+  max-width: none;
+}
+
+form {
+  max-width: 550px;
+  margin: 0 auto;
+  background: #f3edfb;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #d9c7f2;
+}
+
+.campo {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+input, textarea, select {
+  padding: 12px;
+  border: 1px solid #b9a3e3;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  background: #ffffff;
+  color: #3a2e50;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid #7c5cbf;
+  outline-offset: 1px;
+}
+
+textarea { resize: vertical; min-height: 100px; }
+
+form .boton {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #3a2e50;
+  color: #d9c7f2;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer p { margin-bottom: 6px; font-size: 14px; }
+
+footer a { color: #d9c7f2; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  header { flex-direction: column; text-align: center; }
+  nav ul { justify-content: center; }
+  #hero h2 { font-size: 26px; }
+}
