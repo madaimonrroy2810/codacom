@@ -1,100 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CodaCom - Vende sin tienda física</title>
-  <style>
-
-    * { box-sizing: border-box; }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #f4f4f4;
-      color: #222;
-      line-height: 1.5;
-    }
-
-  
-    header, nav, main, section, article, footer, aside {
-      position: relative;
-      display: block;
-      border: 3px solid #999;
-      border-radius: 8px;
-      padding: 28px 16px 16px 16px;
-      margin: 16px 0;
-    }
-
-    header::before, nav::before, main::before, section::before,
-    article::before, footer::before, aside::before {
-      content: attr(data-tag);
-      position: absolute;
-      top: -3px;
-      left: -3px;
-      background: #666;
-      color: #fff;
-      font-size: 12px;
-      font-family: 'Courier New', monospace;
-      padding: 2px 8px;
-      border-radius: 6px 0 6px 0;
-    }
-
-    header { border-color: #e67e22; background: #fdf1e6; }
-    header::before { background: #e67e22; }
-
-    nav { border-color: #16a085; background: #e8f8f5; }
-    nav::before { background: #16a085; }
-
-    main { border-color: #2980b9; background: #eaf3fb; padding-top: 32px; }
-    main::before { background: #2980b9; }
-
-    section { border-color: #27ae60; background: #eafaf1; }
-    section::before { background: #27ae60; }
-
-    article { border-color: #8e44ad; background: #f5eefa; }
-    article::before { background: #8e44ad; }
-
-    footer { border-color: #7f8c8d; background: #ecf0f1; }
-    footer::before { background: #7f8c8d; }
-
-    nav ul { list-style: none; padding: 0; margin: 4px 0 0 0; display: flex; gap: 16px; flex-wrap: wrap; }
-    nav a { text-decoration: none; color: #16a085; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-
-    h1 { margin: 0 0 4px 0; }
-    h2 { margin-top: 4px; }
-    h3 { margin-bottom: 4px; }
-
-    ol, ul { padding-left: 20px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodaCom - Vende sin tienda física</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER: la cabecera del sitio. -->
-  <header data-tag="<header>">
-    <h1>CodaCom</h1>
-    <p>Tu tienda en línea, sin tienda física</p>
-
-    <!-- NAV: agrupa los links de navegación. -->
-    <nav data-tag="<nav>">
+  <!-- HEADER: nombre del sitio -->
+  <header>
+    <div class="logo">Coda<span>Com</span></div>
+    <nav>
       <ul>
-        <li><a href="#problema">El problema</a></li>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#problema">Nosotros</a></li>
         <li><a href="#caracteristicas">Características</a></li>
         <li><a href="#como-funciona">Cómo funciona</a></li>
         <li><a href="#testimonios">Testimonios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#formulario-contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
+  <main>
 
-  <!-- MAIN: el contenido PRINCIPAL de la página. -->
-  <main data-tag="<main>">
-
-    <!-- SECTION 1: presentación  -->
-    <section data-tag="<section>" id="hero">
+    <!-- HERO -->
+    <section id="hero">
       <h2>Vende en línea de forma simple, segura y centralizada</h2>
       <p>
         CodaCom es una plataforma de comercio inteligente que permite a
@@ -102,51 +34,55 @@
         en línea, publicar productos, gestionar pedidos y vender todo desde
         un solo sistema verificado y seguro.
       </p>
+      <a href="#formulario-contacto" class="boton">Quiero mi tienda</a>
     </section>
 
-
-    <!-- SECTION 2: el problema que resuelvo.  -->
-    <section data-tag="<section>" id="problema">
+    <!-- PROBLEMA -->
+    <section id="problema">
       <h2>El problema que resolvemos</h2>
+      <p class="subtitulo">Sobre CodaCom</p>
       <p>
         Muchos emprendedores venden por WhatsApp o redes sociales, pero
         pierden pedidos, mezclan conversaciones de clientes con las
         personales, y no tienen un lugar único donde centralizar ventas,
-        atención al cliente y entrega de productos.
+        atención al cliente y entrega de productos. CodaCom junta todo eso
+        en un solo sistema verificado.
       </p>
     </section>
 
-
-    <!-- SECTION 3: características.  -->
-    <section data-tag="<section>" id="caracteristicas">
+    <!-- CARACTERISTICAS -->
+    <section id="caracteristicas">
       <h2>Características principales</h2>
-
-      <article data-tag="<article>">
-        <h3>Tienda en línea propia</h3>
-        <p>Cada vendedor arma su catálogo de productos sin necesitar una tienda física ni conocimientos técnicos.</p>
-      </article>
-
-      <article data-tag="<article>">
-        <h3>Integración con WhatsApp</h3>
-        <p>Los pedidos y la atención al cliente se centralizan en un solo canal verificado, sin mezclar chats personales.</p>
-      </article>
-
-      <article data-tag="<article>">
-        <h3>Inteligencia artificial</h3>
-        <p>Respuestas automáticas y sugerencias de venta para atender clientes incluso fuera de horario.</p>
-      </article>
-
-      <article data-tag="<article>">
-        <h3>Puntos de entrega</h3>
-        <p>Los pedidos se pueden retirar en puntos de entrega distribuidos por la ciudad, sin depender de un local propio.</p>
-      </article>
+      <p class="subtitulo">Todo lo que necesitas para vender sin complicarte</p>
+      <div class="grid-caracteristicas">
+        <article>
+          <div class="icono">🛍️</div>
+          <h3>Tienda en línea propia</h3>
+          <p>Cada vendedor arma su catálogo de productos sin necesitar una tienda física ni conocimientos técnicos.</p>
+        </article>
+        <article>
+          <div class="icono">💬</div>
+          <h3>Integración con WhatsApp</h3>
+          <p>Los pedidos y la atención al cliente se centralizan en un solo canal verificado, sin mezclar chats personales.</p>
+        </article>
+        <article>
+          <div class="icono">🤖</div>
+          <h3>Inteligencia artificial</h3>
+          <p>Respuestas automáticas y sugerencias de venta para atender clientes incluso fuera de horario.</p>
+        </article>
+        <article>
+          <div class="icono">📍</div>
+          <h3>Puntos de entrega</h3>
+          <p>Los pedidos se pueden retirar en puntos de entrega distribuidos por la ciudad, sin depender de un local propio.</p>
+        </article>
+      </div>
     </section>
 
-
-    <!-- SECTION 4: cómo funciona. -->
-    <section data-tag="<section>" id="como-funciona">
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona">
       <h2>¿Cómo funciona?</h2>
-      <ol>
+      <p class="subtitulo">Cinco pasos, de cero a tu primera venta</p>
+      <ol class="pasos">
         <li>El vendedor se registra y verifica su cuenta.</li>
         <li>Crea su tienda y publica sus productos.</li>
         <li>El cliente compra desde WhatsApp, redes sociales o la web.</li>
@@ -155,29 +91,60 @@
       </ol>
     </section>
 
-
-    <!-- SECTION 5: testimonios. -->
-    <section data-tag="<section>" id="testimonios">
+    <!-- TESTIMONIOS -->
+    <section id="testimonios">
       <h2>Lo que dicen nuestros vendedores</h2>
+      <p class="subtitulo">Historias reales de quienes ya venden con CodaCom</p>
+      <div class="grid-testimonios">
+        <article>
+          <p>"Antes perdía pedidos en el chat de WhatsApp. Ahora todo está organizado en un solo lugar."</p>
+          <h3>— María, repostería casera</h3>
+        </article>
+        <article>
+          <p>"Los puntos de entrega me ayudaron a vender fuera de mi barrio sin necesidad de un local."</p>
+          <h3>— Jorge, ropa deportiva</h3>
+        </article>
+      </div>
+    </section>
 
-      <article data-tag="<article>">
-        <h3>María, repostería casera</h3>
-        <p>"Antes perdía pedidos en el chat de WhatsApp. Ahora todo está organizado en un solo lugar."</p>
-      </article>
-
-      <article data-tag="<article>">
-        <h3>Jorge, ropa deportiva</h3>
-        <p>"Los puntos de entrega me ayudaron a vender fuera de mi barrio sin necesidad de un local."</p>
-      </article>
+    <!-- FORMULARIO DE CONTACTO -->
+    <section id="formulario-contacto">
+      <h2>Hablemos</h2>
+      <p class="subtitulo">Cuéntanos sobre tu emprendimiento y te contactamos</p>
+      <form>
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: María Fernández" required>
+        </div>
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+        <div class="campo">
+          <label for="negocio">¿Qué vendes?</label>
+          <select id="negocio" name="negocio">
+            <option value="">Selecciona una opción</option>
+            <option value="comida">Comida / repostería</option>
+            <option value="ropa">Ropa y accesorios</option>
+            <option value="tecnologia">Tecnología</option>
+            <option value="servicios">Servicios</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas..." required></textarea>
+        </div>
+        <button type="submit" class="boton">Enviar mensaje</button>
+      </form>
     </section>
 
   </main>
 
-
-  <!-- FOOTER: el pie del sitio. -->
-  <footer data-tag="<footer>" id="contacto">
-    <p>&copy; 2026 CodaCom &middot;</p>
-    <p><small>Contacto: info@codacom.com</small></p>
+  <!-- FOOTER: datos del sitio -->
+  <footer>
+    <p>&copy; 2026 CodaCom &middot; Proyecto de la clase - Tecnologías en Internet (UAB)</p>
+    <p>Santa Cruz de la Sierra, Bolivia &middot; <a href="mailto:contacto@codacom.com">contacto@codacom.com</a></p>
   </footer>
 
 </body>
