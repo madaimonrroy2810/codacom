@@ -1,5 +1,5 @@
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
+
 
 
 html { scroll-behavior: smooth; }
@@ -64,7 +64,7 @@ header {
 
 .logo span { color: #3a2e50; }
 
-nav ul {
+.nav-menu {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
@@ -269,9 +269,39 @@ footer p { margin-bottom: 6px; font-size: 14px; }
 
 footer a { color: #d9c7f2; }
 
-/* ===== RESPONSIVE ===== */
+
 @media (max-width: 600px) {
-  header { flex-direction: column; text-align: center; }
-  nav ul { justify-content: center; }
-  #hero h2 { font-size: 26px; }
+
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .grid-caracteristicas,
+  .grid-testimonios {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 40px 16px;
+  }
+
+  form {
+    padding: 24px;
+  }
+
+  #hero {
+    padding: 60px 16px;
+  }
+
+  #hero h2 {
+    font-size: 26px;
+  }
 }
