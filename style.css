@@ -1,7 +1,3 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -305,4 +301,138 @@ footer a { color: #d9c7f2; }
   #hero h2 {
     font-size: 26px;
   }
+}
+/* ===== MODO OSCURO ===== */
+
+.oscuro{
+    background:#1f1f1f;
+    color:#f0f0f0;
+}
+
+/* Header */
+.oscuro header{
+    background:#2c2c2c;
+}
+
+/* Hero */
+.oscuro #hero{
+    background:#353535;
+}
+
+.oscuro #hero h2,
+.oscuro #hero p{
+    color:#ffffff;
+}
+
+/* Todas las secciones */
+.oscuro section,
+.oscuro #como-funciona,
+.oscuro #formulario-contacto{
+    background:#2b2b2b;
+}
+
+/* Títulos */
+.oscuro h2,
+.oscuro h3{
+    color:#d0d0d0;
+}
+
+/* Subtítulos */
+.oscuro .subtitulo{
+    color:#bdbdbd;
+}
+
+/* Todo el texto */
+.oscuro p,
+.oscuro li,
+.oscuro label{
+    color:#ececec;
+}
+
+/* Pasos */
+.oscuro .pasos li{
+    color:#ececec;
+}
+
+/* Tarjetas */
+.oscuro article,
+.oscuro .grid-testimonios article{
+    background:#3b3b3b;
+    border:1px solid #666;
+}
+
+/* Texto de las tarjetas */
+.oscuro article p,
+.oscuro .grid-testimonios p{
+    color:#ececec;
+}
+
+.oscuro .grid-testimonios h3{
+    color:#ffffff;
+}
+
+/* Formulario */
+.oscuro form{
+    background:#3b3b3b;
+}
+
+.oscuro input,
+.oscuro textarea,
+.oscuro select{
+    background:#555;
+    color:#ffffff;
+    border:1px solid #777;
+}
+
+.oscuro input::placeholder,
+.oscuro textarea::placeholder{
+    color:#d0d0d0;
+}
+
+/* Footer */
+.oscuro footer{
+    background:#121212;
+}
+
+/* Enlaces */
+.oscuro a{
+    color:#ffffff;
+}
+.boton-tema{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:6px;
+    background:#7c5cbf;
+    color:white;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.boton-tema:hover{
+    background:#6845ab;
+}
+
+.boton-tema i{
+    font-size:18px;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    margin-right:auto;
+}
+
+.nav{
+    margin-left:auto;
+}
+
+.boton-tema{
+    margin-left:15px;
 }
