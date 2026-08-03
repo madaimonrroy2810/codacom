@@ -5,27 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CodaCom - Vende sin tienda física</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <body>
 
-  <!-- HEADER: nombre del sitio / logo + navegación -->
-  <header>
+ 
+ <header>
+
     <div class="logo">Coda<span>Com</span></div>
+
     <nav class="nav">
-      <ul class="nav-menu">
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#problema">Nosotros</a></li>
-        <li><a href="#caracteristicas">Características</a></li>
-        <li><a href="#como-funciona">Cómo funciona</a></li>
-        <li><a href="#testimonios">Testimonios</a></li>
-        <li><a href="#formulario-contacto">Contacto</a></li>
-      </ul>
+        <ul class="nav-menu">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#problema">Nosotros</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#como-funciona">Cómo funciona</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#formulario-contacto">Contacto</a></li>
+        </ul>
     </nav>
-  </header>
+
+    <button id="btn-tema" class="boton-tema">
+        <i id="icono-tema" class="fa-solid fa-moon"></i>
+    </button>
+
+</header>
 
   <main>
 
-    <!-- HERO -->
+ 
     <section id="hero">
       <h2>Vende en línea de forma simple, segura y centralizada</h2>
       <p>
@@ -37,7 +45,7 @@
       <a href="#formulario-contacto" class="boton">Quiero mi tienda</a>
     </section>
 
-    <!-- PROBLEMA -->
+
     <section id="problema">
       <h2>El problema que resolvemos</h2>
       <p class="subtitulo">Sobre CodaCom</p>
@@ -50,7 +58,6 @@
       </p>
     </section>
 
-    <!-- CARACTERISTICAS -->
     <section id="caracteristicas">
       <h2>Características principales</h2>
       <p class="subtitulo">Todo lo que necesitas para vender sin complicarte</p>
@@ -78,7 +85,6 @@
       </div>
     </section>
 
-    <!-- COMO FUNCIONA -->
     <section id="como-funciona">
       <h2>¿Cómo funciona?</h2>
       <p class="subtitulo">Cinco pasos, de cero a tu primera venta</p>
@@ -91,7 +97,6 @@
       </ol>
     </section>
 
-    <!-- TESTIMONIOS -->
     <section id="testimonios">
       <h2>Lo que dicen nuestros vendedores</h2>
       <p class="subtitulo">Historias reales de quienes ya venden con CodaCom</p>
@@ -107,7 +112,6 @@
       </div>
     </section>
 
-    <!-- FORMULARIO DE CONTACTO: va antes del footer, dentro de main -->
     <section id="formulario-contacto">
       <h2>Hablemos</h2>
       <p class="subtitulo">Cuéntanos sobre tu emprendimiento y te contactamos</p>
@@ -141,11 +145,10 @@
 
   </main>
 
-  <!-- FOOTER: datos del sitio -->
   <footer>
     <p>&copy; 2026 CodaCom &middot; </p>
     <p>Santa Cruz de la Sierra, Bolivia &middot; <a href="mailto:contacto@codacom.com">contacto@codacom.com</a></p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
