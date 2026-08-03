@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbería Don Fígaro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header id="inicio">
+    <h1>Barbería Don Fígaro</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="servicios" class="tarjeta">
+      <h2>Nuestros servicios</h2>
+      <p>En Don Fígaro cuidamos tu estilo con la dedicación de siempre, en un ambiente de barrio donde te conocemos por tu nombre.</p>
+      <ul>
+        <li>Corte clásico - Bs 25</li>
+        <li>Perfilado de barba - Bs 20</li>
+        <li>Corte y barba - Bs 40</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="tarjeta">
+      <h2>Reserva tu turno</h2>
+      <form>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="comentario">Tu comentario</label>
+        <textarea id="comentario" name="comentario" rows="4"></textarea>
+      </form>
+      <button type="button" id="btn-confirmar">Confirmar turno</button>
+      <p id="mensaje" class="oculto"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Parcial 1 - Madai Alejandra Monrroy Vega - 3 de agosto de 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
