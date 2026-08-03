@@ -38,7 +38,7 @@ h2 {
   margin-bottom: 40px;
 }
 
-/* ===== HEADER ===== */
+/*  HEADER  */
 header {
   background: #ffffff;
   padding: 16px 24px;
@@ -76,7 +76,7 @@ nav a {
 
 nav a:hover { color: #7c5cbf; }
 
-/* ===== HERO ===== */
+/*  HERO  */
 #hero {
   background: linear-gradient(135deg, #d9c7f2, #f3edfb);
   text-align: center;
@@ -110,7 +110,7 @@ nav a:hover { color: #7c5cbf; }
 
 .boton:hover { background: #6845ab; }
 
-/* ===== PROBLEMA ===== */
+/*  PROBLEMA  */
 #problema {
   text-align: center;
 }
@@ -121,7 +121,7 @@ nav a:hover { color: #7c5cbf; }
   color: #5a4a75;
 }
 
-/* ===== CARACTERISTICAS ===== */
+/*  CARACTERISTICAS  */
 .grid-caracteristicas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -149,7 +149,7 @@ article p { color: #5a4a75; font-size: 15px; }
   margin-bottom: 10px;
 }
 
-/* ===== COMO FUNCIONA ===== */
+/*  COMO FUNCIONA  */
 #como-funciona { background: #ffffff; max-width: none; }
 
 .pasos {
@@ -180,7 +180,7 @@ article p { color: #5a4a75; font-size: 15px; }
   flex-shrink: 0;
 }
 
-/* ===== TESTIMONIOS ===== */
+/*  TESTIMONIOS  */
 .grid-testimonios {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -203,7 +203,7 @@ article p { color: #5a4a75; font-size: 15px; }
   color: #5a4a75;
 }
 
-/* ===== FORMULARIO DE CONTACTO ===== */
+/*  FORMULARIO DE CONTACTO  */
 #formulario-contacto {
   background: #ffffff;
   max-width: none;
@@ -254,7 +254,7 @@ form .boton {
   font-size: 16px;
 }
 
-/* ===== FOOTER ===== */
+/*  FOOTER  */
 footer {
   background: #3a2e50;
   color: #d9c7f2;
@@ -302,7 +302,7 @@ footer a { color: #d9c7f2; }
     font-size: 26px;
   }
 }
-/* ===== MODO OSCURO ===== */
+/*  MODO OSCURO  */
 
 .oscuro{
     background:#1f1f1f;
@@ -342,7 +342,7 @@ footer a { color: #d9c7f2; }
     color:#bdbdbd;
 }
 
-/* Todo el texto */
+
 .oscuro p,
 .oscuro li,
 .oscuro label{
