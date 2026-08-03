@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f0e8;
+  color: #2b2013;
+}
+
+header {
+  background-color: #6b4226;
+  color: #fdf6ec;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+header h1 {
+  margin: 0 0 12px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+nav a {
+  color: #f2c14e;
+  text-decoration: none;
+  font-weight: bold;
+}
