@@ -57,3 +57,38 @@ main {
 .tarjeta li {
   margin: 6px 0;
 }
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 12px 0 4px;
+}
+ 
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font: inherit;
+}
+ 
+#btn-confirmar {
+  margin-top: 14px;
+  background-color: #c0392b;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font: inherit;
+  font-weight: bold;
+}
+ 
+#mensaje {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: 1px solid #2c5f8a;
+  border-radius: 6px;
+  color: #2c5f8a;
+}
