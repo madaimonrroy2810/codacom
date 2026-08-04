@@ -5,3 +5,5 @@ function mostrarMensaje() {
   mensaje.textContent = "Turno recibido - te atiende Madai Alejandra Monrroy Vega";
   mensaje.classList.remove("oculto");
 }
+
+boton.addEventListener("click", mostrarMensaje);
