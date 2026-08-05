@@ -436,3 +436,18 @@ header{
 .boton-tema{
     margin-left:15px;
 }
+
+
+.error{
+    color: #e53935;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.exito{
+    color: #2e7d32;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
