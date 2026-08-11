@@ -47,3 +47,58 @@ label {
     font-size: 14px;
 }
 
+input, textarea {
+    padding: 10px;
+    border: 1px solid #cbb890;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+button {
+    background: #d9a441;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #b8842c;
+}
+
+.aviso {
+    display: none;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+.aviso.error {
+    display: block;
+    color: #b00020;
+}
+
+.aviso.exito {
+    display: block;
+    color: #1b7f3b;
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    color: #6b6355;
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 20px;
+}
