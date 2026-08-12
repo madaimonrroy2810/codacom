@@ -3,52 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Óptica Mirasol</title>
+<title>CodaCom - Vende sin tienda física</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <body>
 
 <header>
-    <h1>Óptica Mirasol</h1>
-    <p>
-        En Óptica Mirasol te ayudamos a cuidar tu vista con exámenes
-        profesionales, armazones de calidad y atención personalizada.
-        Reservá tu cita y empezá a ver mejor.
-    </p>
+
+    <div class="logo">Coda<span>Com</span></div>
+
+    <nav class="nav">
+        <ul class="nav-menu">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#problema">Nosotros</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#como-funciona">Cómo funciona</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#formulario-contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <button id="btn-tema" class="boton-tema">
+        <i id="icono-tema" class="fa-solid fa-moon"></i>
+    </button>
+
 </header>
 
 <main>
 
-    <form id="form-cita" novalidate method="POST" action="procesar.php">
+<section id="hero">
+    <h1>Vende en línea de forma simple, segura y centralizada</h1>
+    <p>
+        CodaCom es una plataforma de comercio inteligente que permite a
+        emprendedores y vendedores sin tienda física crear su propia tienda
+        en línea, publicar productos, gestionar pedidos y vender todo desde
+        un solo sistema verificado y seguro.
+    </p>
+    <a href="#formulario-contacto" class="boton">Quiero mi tienda</a>
+</section>
+
+<section id="problema">
+    <h2>El problema que resolvemos</h2>
+    <p class="subtitulo">Sobre CodaCom</p>
+    <p>
+        Muchos emprendedores venden por WhatsApp o redes sociales, pero
+        pierden pedidos, mezclan conversaciones de clientes con las
+        personales, y no tienen un lugar único donde centralizar ventas,
+        atención al cliente y entrega de productos.
+    </p>
+</section>
+
+<section id="caracteristicas">
+    <h2>Características principales</h2>
+    <p class="subtitulo">Todo lo que necesitas para vender sin complicarte</p>
+
+    <div class="grid-caracteristicas">
+
+        <article>
+            <div class="icono">🛍️</div>
+            <h3>Tienda en línea propia</h3>
+            <p>Cada vendedor arma su catálogo de productos sin conocimientos técnicos.</p>
+        </article>
+
+        <article>
+            <div class="icono">💬</div>
+            <h3>Integración con WhatsApp</h3>
+            <p>Los pedidos y la atención al cliente se centralizan en un solo canal.</p>
+        </article>
+
+        <article>
+            <div class="icono">🤖</div>
+            <h3>Inteligencia artificial</h3>
+            <p>Respuestas automáticas para atender clientes incluso fuera de horario.</p>
+        </article>
+
+        <article>
+            <div class="icono">📍</div>
+            <h3>Puntos de entrega</h3>
+            <p>Entrega de pedidos sin necesidad de un local físico.</p>
+        </article>
+
+    </div>
+</section>
+
+<section id="como-funciona">
+    <h2>¿Cómo funciona?</h2>
+
+    <ol class="pasos">
+        <li>El vendedor se registra.</li>
+        <li>Crea su tienda.</li>
+        <li>Publica productos.</li>
+        <li>Recibe pedidos.</li>
+        <li>Realiza la entrega.</li>
+    </ol>
+</section>
+
+<section id="testimonios">
+
+    <h2>Testimonios</h2>
+
+    <div class="grid-testimonios">
+
+        <article>
+            <p>"Antes perdía pedidos. Ahora todo está organizado."</p>
+            <h3>María</h3>
+        </article>
+
+        <article>
+            <p>"Ahora vendo mucho más."</p>
+            <h3>Jorge</h3>
+        </article>
+
+    </div>
+
+</section>
+
+<section id="formulario-contacto">
+
+    <h2>Hablemos</h2>
+
+    <form id="form-contacto" novalidate>
 
         <div class="campo">
-            <label for="nombre">Nombre completo:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" required>
         </div>
 
         <div class="campo">
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" required>
         </div>
 
         <div class="campo">
-            <label for="consulta">Contanos qué necesitás:</label>
-            <textarea id="consulta" name="consulta"></textarea>
+            <label for="negocio">¿Qué vendes?</label>
+
+            <select id="negocio">
+
+                <option value="">Selecciona una opción</option>
+                <option>Comida</option>
+                <option>Ropa</option>
+                <option>Tecnología</option>
+                <option>Servicios</option>
+                <option>Otro</option>
+
+            </select>
         </div>
 
-        <button type="submit">Pedir mi cita</button>
+        <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" required></textarea>
+        </div>
 
-        <p id="aviso-cita" class="aviso"></p>
+        <button type="submit" class="boton">Enviar mensaje</button>
+
+        <p id="error-formulario"></p>
 
     </form>
+
+</section>
 
 </main>
 
 <footer>
-    <p>Parcial 2 - Madai Alejandra Monrroy Vega - 11 de agosto de 2026</p>
+
+<p>&copy; 2026 CodaCom</p>
+
 </footer>
 
 <script src="script.js"></script>
 
 </body>
 </html>
+
