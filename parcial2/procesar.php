@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Cita reservada - Óptica Mirasol</title>
-<link rel="stylesheet" href="style.css">
-</head>
 <body>
 
 <h1><?php echo "Cita reservada en Óptica Mirasol"; ?></h1>
