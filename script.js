@@ -1,5 +1,3 @@
-
-
 const boton = document.querySelector("#btn-tema");
 const icono = document.querySelector("#icono-tema");
 
@@ -22,8 +20,6 @@ const aviso = document.querySelector("#error-formulario");
 
 function revisarFormulario(event) {
 
-    event.preventDefault();
-
     const nombre = document.querySelector("#nombre").value;
     const email = document.querySelector("#email").value;
 
@@ -32,12 +28,14 @@ function revisarFormulario(event) {
         aviso.textContent = "Debes escribir tu nombre.";
         aviso.classList.add("error");
         aviso.classList.remove("exito");
+        event.preventDefault();
 
     } else if (email.includes("@") === false) {
 
         aviso.textContent = "El correo no es válido.";
         aviso.classList.add("error");
         aviso.classList.remove("exito");
+        event.preventDefault();
 
     } else {
 
@@ -50,4 +48,3 @@ function revisarFormulario(event) {
 }
 
 formulario.addEventListener("submit", revisarFormulario);
-

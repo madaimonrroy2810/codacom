@@ -38,7 +38,6 @@ h2 {
   margin-bottom: 40px;
 }
 
-/*  HEADER  */
 header {
   background: #ffffff;
   padding: 16px 24px;
@@ -57,9 +56,12 @@ header {
   font-size: 24px;
   font-weight: 800;
   color: #7c5cbf;
+  margin-right: auto;
 }
 
 .logo span { color: #3a2e50; }
+
+.nav { margin-left: auto; }
 
 .nav-menu {
   display: flex;
@@ -76,7 +78,6 @@ nav a {
 
 nav a:hover { color: #7c5cbf; }
 
-/*  HERO  */
 #hero {
   background: linear-gradient(135deg, #d9c7f2, #f3edfb);
   text-align: center;
@@ -110,10 +111,7 @@ nav a:hover { color: #7c5cbf; }
 
 .boton:hover { background: #6845ab; }
 
-/*  PROBLEMA  */
-#problema {
-  text-align: center;
-}
+#problema { text-align: center; }
 
 #problema p {
   max-width: 650px;
@@ -121,7 +119,6 @@ nav a:hover { color: #7c5cbf; }
   color: #5a4a75;
 }
 
-/*  CARACTERISTICAS  */
 .grid-caracteristicas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -144,12 +141,8 @@ article h3 {
 
 article p { color: #5a4a75; font-size: 15px; }
 
-.icono {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
+.icono { font-size: 30px; margin-bottom: 10px; }
 
-/*  COMO FUNCIONA  */
 #como-funciona { background: #ffffff; max-width: none; }
 
 .pasos {
@@ -180,7 +173,6 @@ article p { color: #5a4a75; font-size: 15px; }
   flex-shrink: 0;
 }
 
-/*  TESTIMONIOS  */
 .grid-testimonios {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -193,21 +185,11 @@ article p { color: #5a4a75; font-size: 15px; }
   border: none;
 }
 
-.grid-testimonios h3 {
-  font-size: 15px;
-  color: #3a2e50;
-}
+.grid-testimonios h3 { font-size: 15px; color: #3a2e50; }
 
-.grid-testimonios p {
-  font-style: italic;
-  color: #5a4a75;
-}
+.grid-testimonios p { font-style: italic; color: #5a4a75; }
 
-/*  FORMULARIO DE CONTACTO  */
-#formulario-contacto {
-  background: #ffffff;
-  max-width: none;
-}
+#formulario-contacto { background: #ffffff; max-width: none; }
 
 form {
   max-width: 550px;
@@ -254,7 +236,6 @@ form .boton {
   font-size: 16px;
 }
 
-/*  FOOTER  */
 footer {
   background: #3a2e50;
   color: #d9c7f2;
@@ -266,138 +247,18 @@ footer p { margin-bottom: 6px; font-size: 14px; }
 
 footer a { color: #d9c7f2; }
 
-
-@media (max-width: 600px) {
-
-
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .grid-caracteristicas,
-  .grid-testimonios {
-    grid-template-columns: 1fr;
-  }
-
-  section {
-    padding: 40px 16px;
-  }
-
-  form {
-    padding: 24px;
-  }
-
-  #hero {
-    padding: 60px 16px;
-  }
-
-  #hero h2 {
-    font-size: 26px;
-  }
-}
-/*  MODO OSCURO  */
-
-.oscuro{
-    background:#1f1f1f;
-    color:#f0f0f0;
+.error {
+    color: #e53935;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-/* Header */
-.oscuro header{
-    background:#2c2c2c;
+.exito {
+    color: #2e7d32;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-/* Hero */
-.oscuro #hero{
-    background:#353535;
-}
-
-.oscuro #hero h2,
-.oscuro #hero p{
-    color:#ffffff;
-}
-
-/* Todas las secciones */
-.oscuro section,
-.oscuro #como-funciona,
-.oscuro #formulario-contacto{
-    background:#2b2b2b;
-}
-
-/* Títulos */
-.oscuro h2,
-.oscuro h3{
-    color:#d0d0d0;
-}
-
-/* Subtítulos */
-.oscuro .subtitulo{
-    color:#bdbdbd;
-}
-
-
-.oscuro p,
-.oscuro li,
-.oscuro label{
-    color:#ececec;
-}
-
-/* Pasos */
-.oscuro .pasos li{
-    color:#ececec;
-}
-
-/* Tarjetas */
-.oscuro article,
-.oscuro .grid-testimonios article{
-    background:#3b3b3b;
-    border:1px solid #666;
-}
-
-/* Texto de las tarjetas */
-.oscuro article p,
-.oscuro .grid-testimonios p{
-    color:#ececec;
-}
-
-.oscuro .grid-testimonios h3{
-    color:#ffffff;
-}
-
-/* Formulario */
-.oscuro form{
-    background:#3b3b3b;
-}
-
-.oscuro input,
-.oscuro textarea,
-.oscuro select{
-    background:#555;
-    color:#ffffff;
-    border:1px solid #777;
-}
-
-.oscuro input::placeholder,
-.oscuro textarea::placeholder{
-    color:#d0d0d0;
-}
-
-/* Footer */
-.oscuro footer{
-    background:#121212;
-}
-
-/* Enlaces */
-.oscuro a{
-    color:#ffffff;
-}
 .boton-tema{
     width:40px;
     height:40px;
@@ -406,48 +267,38 @@ footer a { color: #d9c7f2; }
     background:#7c5cbf;
     color:white;
     cursor:pointer;
-
     display:flex;
     justify-content:center;
     align-items:center;
-}
-
-.boton-tema:hover{
-    background:#6845ab;
-}
-
-.boton-tema i{
-    font-size:18px;
-}
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    margin-right:auto;
-}
-
-.nav{
-    margin-left:auto;
-}
-
-.boton-tema{
     margin-left:15px;
 }
 
+.boton-tema:hover{ background:#6845ab; }
 
-.error{
-    color: #e53935;
-    font-weight: bold;
-    margin-top: 10px;
+.boton-tema i{ font-size:18px; }
+
+.oscuro{ background:#1f1f1f; color:#f0f0f0; }
+.oscuro header{ background:#2c2c2c; }
+.oscuro #hero{ background:#353535; }
+.oscuro #hero h1, .oscuro #hero p{ color:#ffffff; }
+.oscuro section, .oscuro #como-funciona, .oscuro #formulario-contacto{ background:#2b2b2b; }
+.oscuro h2, .oscuro h3{ color:#d0d0d0; }
+.oscuro .subtitulo{ color:#bdbdbd; }
+.oscuro p, .oscuro li, .oscuro label{ color:#ececec; }
+.oscuro article, .oscuro .grid-testimonios article{ background:#3b3b3b; border:1px solid #666; }
+.oscuro article p, .oscuro .grid-testimonios p{ color:#ececec; }
+.oscuro .grid-testimonios h3{ color:#ffffff; }
+.oscuro form{ background:#3b3b3b; }
+.oscuro input, .oscuro textarea, .oscuro select{ background:#555; color:#ffffff; border:1px solid #777; }
+.oscuro input::placeholder, .oscuro textarea::placeholder{ color:#d0d0d0; }
+.oscuro footer{ background:#121212; }
+.oscuro a{ color:#ffffff; }
+
+@media (max-width: 600px) {
+  header { flex-direction: column; text-align: center; }
+  .nav-menu { flex-direction: column; align-items: center; gap: 12px; }
+  .grid-caracteristicas, .grid-testimonios { grid-template-columns: 1fr; }
+  section { padding: 40px 16px; }
+  form { padding: 24px; }
+  #hero { padding: 60px 16px; }
 }
-
-.exito{
-    color: #2e7d32;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-
