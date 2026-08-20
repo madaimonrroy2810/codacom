@@ -49,5 +49,5 @@ Route::get('/registro', function () {
 })->name('registro');
 
 Route::post('/registro', [VendedorController::class, 'registrar'])->name('vendedor.registrar');
-
+Route::get('/vendedores', [VendedorController::class, 'index'])->name('vendedores.index');
 Route::get('/vendedor/{codigo}', [VendedorController::class, 'verificar'])->name('vendedor.verificar');
